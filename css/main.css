@@ -188,4 +188,131 @@ table {
 
 td, th {
   padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  place-content: center;
+  background: hsl(0, 100%, 74%) url("../images/bg-intro-desktop.png") no-repeat;
+  background-size: cover;
+  padding: 7.55em;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  max-width: 550px;
+  margin: auto;
+}
+
+.text-head {
+  font-weight: 600;
+  font-size: 3em;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  max-width: 600px;
+}
+
+.form {
+  background: white;
+  padding: 2.5em;
+  border-radius: 10px;
+}
+.form input {
+  color: hsl(249, 10%, 26%);
+  font-weight: 500;
+  padding: 0.85em 3.5em 0.85em 2em;
+  border-radius: 5px;
+  border: 2px solid hsl(246, 25%, 77%);
+  width: 100%;
+}
+.form input:focus-within {
+  font-weight: 700;
+  outline: none;
+  border: 2px solid hsl(249, 10%, 26%);
+}
+.form .error {
+  border: 2px solid hsl(0, 100%, 74%);
+}
+.form h2 {
+  color: hsl(246, 25%, 77%);
+  font-weight: 500;
+  font-size: 0.7em;
+  text-align: center;
+}
+.form a {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 1.22em;
+}
+
+.error-img {
+  position: absolute;
+  right: 1.5em;
+  top: 1em;
+}
+
+.error-text {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+  font-style: italic;
+  text-align: right;
+  font-size: 0.7em;
+  padding-top: 0.5em;
+  margin-left: auto;
+}
+
+.inv {
+  display: none;
+}
+
+.btn {
+  border-radius: 10px;
+}
+.btn-try {
+  background: hsl(248, 32%, 49%);
+  color: white;
+  padding: 1em 0;
+  font-weight: 400;
+  border: 1px solid #564c94;
+  border-bottom: 2px solid #564c94;
+}
+.btn-try span {
+  font-weight: 600;
+}
+.btn-claim {
+  background: hsl(154, 59%, 51%);
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  padding: 0.85em 0;
+  border: 2px solid #30bb7f;
+  border-bottom: 3px solid #30bb7f;
+  margin-bottom: 1em;
+}
+.btn-claim:hover {
+  background: #61d6a3;
+  border: 2px solid #61d6a3;
+  border-bottom: 3px solid #61d6a3;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,59 @@
+.form-container
+    display: flex
+    flex-direction: column
+    gap: 1.5em
+    max-width: 600px
+
+.form
+    background: white
+    // display: flex
+    // flex-direction: column
+    // gap: 1.25em
+    padding: 2.5em
+    border-radius: 10px
+
+    input
+        color: $dark-blue
+        font-weight: $font-medium
+        padding: .85em 3.5em .85em 2em
+        border-radius: 5px
+        border: 2px solid $grayish-blue
+        width: 100%
+        &:focus-within
+            font-weight: $font-bold
+            outline: none
+            border: 2px solid $dark-blue
+        
+    .error
+        border: 2px solid $red
+
+    h2
+
+        color: $grayish-blue
+        font-weight: $font-medium
+        font-size: .7em
+        text-align: center
+
+    a
+        text-decoration: none
+        color: $red
+        font-weight: $font-bold
+
+.input-container
+    position: relative
+    margin-bottom: 1.22em
+
+.error-img
+    position: absolute
+    right: 1.5em
+    top: 1em
+.error-text
+    color: $red
+    font-weight: $font-semibold
+    font-style: italic
+    text-align: right
+    font-size: .7em
+    padding-top: .5em
+    margin-left: auto
+.inv
+    display: none
